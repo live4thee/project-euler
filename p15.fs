@@ -12,4 +12,7 @@ let solve_p15 (num: int) =
     fill_grid grid; grid.[num, num]
 
 
+(* Fast computation with a grid size of n x m:
+ * f(n, m) = (n + m)! / (n! * m!)
+ *)
 printfn "%d" (solve_p15 20)
